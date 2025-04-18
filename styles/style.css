@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,6 +37,70 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+
+.content {
+  display: grid;
+  grid-template-areas:
+  "result result  content__details"
+  "result result  content__details";
+  gap: 30px;
+  width: 1140px;
+  height: 534px;
+}
+
+.result {
+  grid-area: result;
+  width: 711px;
+  padding-top: 78px;
+}
+.result__video-container {
+  width: 711px;
+  margin-bottom: 16px;
+}
+.result__video {
+  width: 100%;
+  object-fit: cover;
+}
+.search-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.search-form__fieldset {
+}
+.search-form__fieldset-title {
+}
+.search-form__label {
+}
+.search-form__label-text {
+}
+.visually-hidden {
+}
+.search-form__textfield {
+}
+.search-form__checkbox-list {
+}
+.search-form__checkbox {
+}
+.search-form__pseudo-checkbox {
+}
+.button {
+}
+.search-form__submit-button {
+}
+.content__details {
+  grid-area: contennt__details;
+  
+}
+.title {
+}
+.content__accent {
+}
+.content__list-container {
+}
+.content__list {
 }
 
 /* Кастомный скроллбар */
